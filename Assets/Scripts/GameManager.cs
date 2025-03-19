@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         }
 
         if (!choice) {
-            lowerClassApproval -= 1;
+            upperClassApproval -= .5f;
             lowerClassApproval += 1;
         }
         print("Lower Class Approval: " + lowerClassApproval);
