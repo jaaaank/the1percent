@@ -1,19 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
     public float money;
-    public string playerName;
-    public float upperClassApproval;
-    public float lowerClassApproval;
+
+    //each range from 0-1
+    float upperApproval = .5f;
+    float middleApproval = .5f;
+    float lowerApproval = .5f;
+
+    //range from 0-1, all 3 should always add up to 1
+    float upperPop = .19f;
+    float middlePop = .51f;
+    float lowerPop = .3f;
+
+    public TextMeshProUGUI scores;
+    public TextMeshProUGUI pops;
+
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        scores.text = "Lower Class Approval: " + lowerApproval*100 + "%\nMiddle Class Approval: " + middleApproval*100 + "%\nUpper Class Approval: " + upperApproval * 100 + "%";
+        pops.text = "Lower Class Population: " + lowerPop*100 + "%\nMiddle Class Population: " + middlePop*100 + "%\nUpper Class Population: " + upperPop*100 + "%" ;
     }
 
     // Update is called once per frame
@@ -25,15 +38,14 @@ public class GameManager : MonoBehaviour
     public void buttonPressed(bool choice)
     {
         if (choice) {
-            upperClassApproval += 1;
-            lowerClassApproval -= 1;
+            upperApproval += .1f;
+            lowerApproval -= .1f;
         }
-
+    
         if (!choice) {
-            upperClassApproval -= .5f;
-            lowerClassApproval += 1;
+            upperApproval -= .05f;
+            lowerApproval += .10f;
         }
-        print("Lower Class Approval: " + lowerClassApproval);
-        print("Upper Class Approval: " + upperClassApproval);
+        scores.text = "Lower Class Approval: " + lowerApproval * 100 + "%\nMiddle Class Approval: "+ middleApproval*100+"%\nUpper Class Approval: " + upperApproval * 100 + "%";
     }
 }
