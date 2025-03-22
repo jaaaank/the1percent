@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: Insurance
+  m_EditorClassIdentifier: 
+  promptDescription: 'A wealthy health insurance CEO has implemented a policy in
+    his company that will deny hundreds more claims per day, increasing his own wealth
+    and squeezing even more out of the middle and lower class, and is lobbying you
+    with lots of money to not pass any restrictions on this.
+
+
+    Pass a restriction
+    despite the lobbying?
+
+'
+  yesText: Pass a restriction
+  noText: Do not pass any restriction
+  yesResponse: The middle and lower class thank you for not allowing this to happen!
+  noResponse: The middle and lower class are losing money, and their approval of
+    you has dropped. But hey, at least you got some money.
+  yesStats:
+    _serializedList:
+    - Key: money
+      Value: -10
+    - Key: lowerPop
+      Value: -5
+    - Key: middlePop
+      Value: 5
+    - Key: upperPop
+      Value: 0
+    - Key: lowerApp
+      Value: 10
+    - Key: middleApp
+      Value: 5
+    - Key: upperApp
+      Value: -10
+  noStats:
+    _serializedList:
+    - Key: money
+      Value: 15
+    - Key: lowerPop
+      Value: 5
+    - Key: middlePop
+      Value: -5
+    - Key: upperPop
+      Value: 0
+    - Key: lowerApp
+      Value: -10
+    - Key: middleApp
+      Value: -5
+    - Key: upperApp
+      Value: 10

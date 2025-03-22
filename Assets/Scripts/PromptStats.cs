@@ -1,3 +1,4 @@
+using AYellowpaper.SerializedCollections;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,21 +7,17 @@ using UnityEngine;
 
 public class PromptStats : ScriptableObject
 {
-   public float yesMoney;
-   public float noMoney;
+    [TextArea(3,10)]
+    public string promptDescription;
 
-   public float yesLowerPop;
-   public float yesMiddlePop;
-   public float yesUpperPop;
-   public float yesLowerApp;
-   public float yesMiddleApp;
-   public float yesUpperApp;
-     
-   public float noLowerPop;
-   public float noMiddlePop;
-   public float noUpperPop;
-   public float noLowerApp;
-   public float noMiddleApp;
-   public float noUpperApp;
-    
+    public string yesText;
+    public string noText;
+
+    [TextArea(3, 10)]
+    public string yesResponse;
+    [TextArea(3, 10)]
+    public string noResponse;
+
+    public SerializedDictionary<string, float> yesStats;
+    public SerializedDictionary<string, float> noStats;  
 }

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: TrickleDown
+  m_EditorClassIdentifier: 
+  promptDescription: Your advisor is telling you about his awesome new idea, "trickle
+    down economics." He says that if you introduce sweeping tax cuts across the upper
+    class, that wealth will trickle down through society and reach the working class!
+  yesText: Try it out!
+  noText: Sounds like a bad idea.
+  yesResponse: A bad idea it is. "Trickle down economics" was a real idea proposed
+    and attempted by the Reagan administration. 40 years later, the wealth has never
+    trickled down.
+  noResponse: '"Trickle down economics" was a real idea proposed and attempted by
+    the Reagan administration. 40 years later, the wealth has never trickled down.'
+  yesStats:
+    _serializedList:
+    - Key: money
+      Value: -10
+    - Key: lowerPop
+      Value: 0
+    - Key: middlePop
+      Value: 0
+    - Key: upperPop
+      Value: 0
+    - Key: lowerApp
+      Value: 0
+    - Key: middleApp
+      Value: 0
+    - Key: upperApp
+      Value: 10
+  noStats:
+    _serializedList:
+    - Key: money
+      Value: 5
+    - Key: lowerPop
+      Value: 0
+    - Key: middlePop
+      Value: 0
+    - Key: upperPop
+      Value: 0
+    - Key: lowerApp
+      Value: 0
+    - Key: middleApp
+      Value: 0
+    - Key: upperApp
+      Value: -5
