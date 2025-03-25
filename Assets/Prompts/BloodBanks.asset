@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: BloodBanks
+  m_EditorClassIdentifier: 
+  promptDescription: 'One of your advisors informs you of a situation involving blood
+    banks:
+
+
+    As you may know, it''s legal to sell your blood plasma for some
+    quick cash. Currently, the legal limit is twice every seven days. However, the
+    blood banks have been consistently lowering their pay rates for a while now,
+    leaving many with a dwindling income.
+
+
+    (PROGRAMMER NOTE: this would be a
+    good spot to have more than two options, third would be something like "ban the
+    sale of blood plasma all together, only allow donations")'
+  yesText: Pass a law creating a fair minimum payout for plasma sellers
+  noText: Do nothing
+  yesResponse: "This happens in real life. Draining that amount of blood has serious
+    adverse health effects, but some people need that additional income to survive.
+    These blood collection centers set up in the poorest neighborhoods. The industry
+    of paid blood plasma donations was worth $4 billion in 2008, before the global
+    financial crisis, and is now expected to reach $48 billion by 2025. \n(PROGRAMMER
+    NOTE: its probably a good idea to get sources for some of these claims.)\nhttps://www.mississippifreepress.org/wp-content/uploads/2022/07/The-Interlinkage-between-Blood-Plasma-Donation-and-Poverty-February-2021.pdf"
+  noResponse: "This happens in real life. Draining that amount of blood has serious
+    adverse health effects, but some people need that additional income to survive.
+    These blood collection centers set up in the poorest neighborhoods. The industry
+    of paid blood plasma donations was worth $4 billion in 2008, before the global
+    financial crisis, and is now expected to reach $48 billion by 2025. \n(PROGRAMMER
+    NOTE: its probably a good idea to get sources for some of these claims.)\nhttps://www.mississippifreepress.org/wp-content/uploads/2022/07/The-Interlinkage-between-Blood-Plasma-Donation-and-Poverty-February-2021.pdf"
+  yesStats:
+    _serializedList:
+    - Key: money
+      Value: -10
+    - Key: lowerPop
+      Value: -5
+    - Key: middlePop
+      Value: 5
+    - Key: upperPop
+      Value: 0
+    - Key: lowerApp
+      Value: 15
+    - Key: middleApp
+      Value: 5
+    - Key: upperApp
+      Value: -7
+  noStats:
+    _serializedList:
+    - Key: money
+      Value: 10
+    - Key: lowerPop
+      Value: 5
+    - Key: middlePop
+      Value: -5
+    - Key: upperPop
+      Value: 0
+    - Key: lowerApp
+      Value: -10
+    - Key: middleApp
+      Value: -5
+    - Key: upperApp
+      Value: 10

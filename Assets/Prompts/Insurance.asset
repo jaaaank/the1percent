@@ -24,9 +24,10 @@ MonoBehaviour:
 '
   yesText: Pass a restriction
   noText: Do not pass any restriction
-  yesResponse: The middle and lower class thank you for not allowing this to happen!
+  yesResponse: The middle and lower classes thank you for protecting them!
   noResponse: The middle and lower class are losing money, and their approval of
-    you has dropped. But hey, at least you got some money.
+    you has dropped. But hey, at least you got some money, and the rich people like
+    you more.
   yesStats:
     _serializedList:
     - Key: money
