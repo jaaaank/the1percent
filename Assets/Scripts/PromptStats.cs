@@ -1,4 +1,5 @@
 using AYellowpaper.SerializedCollections;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,17 +8,27 @@ using UnityEngine;
 
 public class PromptStats : ScriptableObject
 {
+    public bool hasThirdOption;
+
     [TextArea(3,10)]
     public string promptDescription;
 
     public string yesText;
+    public string midText;
     public string noText;
 
-    [TextArea(3, 10)]
+    public float yesMoney;
+    public float midMoney;
+    public float noMoney;
+
+    [TextArea(3, 5)]
     public string yesResponse;
-    [TextArea(3, 10)]
+    [TextArea(3, 5)]
+    public string midResponse;
+    [TextArea(3, 5)]
     public string noResponse;
 
-    public SerializedDictionary<string, float> yesStats;
-    public SerializedDictionary<string, float> noStats;  
+    public SerializedDictionary<string, SerializedDictionary<string, float>> yesCountyEffects;
+    public SerializedDictionary<string, SerializedDictionary<string, float>> midCountyEffects;
+    public SerializedDictionary<string, SerializedDictionary<string, float>> noCountyEffects;
 }

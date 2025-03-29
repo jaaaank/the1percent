@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
   m_Name: Insurance
   m_EditorClassIdentifier: 
+  hasThirdOption: 0
   promptDescription: 'A wealthy health insurance CEO has implemented a policy in
     his company that will deny hundreds more claims per day, increasing his own wealth
     and squeezing even more out of the middle and lower class, and is lobbying you
@@ -23,40 +24,73 @@ MonoBehaviour:
 
 '
   yesText: Pass a restriction
+  midText: 
   noText: Do not pass any restriction
+  yesMoney: -10
+  midMoney: 0
+  noMoney: 5
   yesResponse: The middle and lower classes thank you for protecting them!
+  midResponse: 
   noResponse: The middle and lower class are losing money, and their approval of
     you has dropped. But hey, at least you got some money, and the rich people like
     you more.
-  yesStats:
+  yesCountyEffects:
     _serializedList:
-    - Key: money
-      Value: -10
-    - Key: lowerPop
-      Value: -5
-    - Key: middlePop
-      Value: 5
-    - Key: upperPop
-      Value: 0
-    - Key: lowerApp
-      Value: 10
-    - Key: middleApp
-      Value: 5
-    - Key: upperApp
-      Value: -10
-  noStats:
+    - Key: WealthyPlace
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
+    - Key: MiddlePlace
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 3
+        - Key: wealth
+          Value: 3
+    - Key: PoorPlace
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 7
+        - Key: wealth
+          Value: 7
+  midCountyEffects:
+    _serializedList: []
+  noCountyEffects:
     _serializedList:
-    - Key: money
-      Value: 15
-    - Key: lowerPop
-      Value: 5
-    - Key: middlePop
-      Value: -5
-    - Key: upperPop
-      Value: 0
-    - Key: lowerApp
-      Value: -10
-    - Key: middleApp
-      Value: -5
-    - Key: upperApp
-      Value: 10
+    - Key: WealthyPlace
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
+    - Key: MiddlePlace
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -3
+        - Key: wealth
+          Value: -3
+    - Key: PoorPlace
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -7
+        - Key: wealth
+          Value: -7
