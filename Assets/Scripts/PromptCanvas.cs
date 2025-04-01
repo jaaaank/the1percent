@@ -74,7 +74,7 @@ public class PromptCanvas : MonoBehaviour
         description.text = currentPrompt.promptDescription;
 
         nationalHappiness = (county1.GetComponent<County>().hapiness + county2.GetComponent<County>().hapiness + county3.GetComponent<County>().hapiness) / numCounties;
-        natHapiness.text = "National Approval: " + nationalHappiness;
+        natHapiness.text = "National Approval: " + nationalHappiness + "%";
 
     }
 
