@@ -453,7 +453,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1884420855}
         m_TargetAssemblyTypeName: PromptCanvas, Assembly-CSharp
-        m_MethodName: RichAdvice
+        m_MethodName: PoorAdvice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3181,7 +3181,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1884420855}
         m_TargetAssemblyTypeName: PromptCanvas, Assembly-CSharp
-        m_MethodName: PoorAdvice
+        m_MethodName: RichAdvice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
