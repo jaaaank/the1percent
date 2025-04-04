@@ -36,7 +36,7 @@ MonoBehaviour:
     you more.
   yesCountyEffects:
     _serializedList:
-    - Key: WealthyPlace
+    - Key: Pajo
       Value:
         _serializedList:
         - Key: food
@@ -45,7 +45,7 @@ MonoBehaviour:
           Value: 0
         - Key: wealth
           Value: -10
-    - Key: MiddlePlace
+    - Key: Resare
       Value:
         _serializedList:
         - Key: food
@@ -54,7 +54,7 @@ MonoBehaviour:
           Value: 3
         - Key: wealth
           Value: 3
-    - Key: PoorPlace
+    - Key: Loid
       Value:
         _serializedList:
         - Key: food
@@ -67,7 +67,7 @@ MonoBehaviour:
     _serializedList: []
   noCountyEffects:
     _serializedList:
-    - Key: WealthyPlace
+    - Key: Pajo
       Value:
         _serializedList:
         - Key: food
@@ -76,7 +76,7 @@ MonoBehaviour:
           Value: 0
         - Key: wealth
           Value: 10
-    - Key: MiddlePlace
+    - Key: Resare
       Value:
         _serializedList:
         - Key: food
@@ -85,7 +85,7 @@ MonoBehaviour:
           Value: -3
         - Key: wealth
           Value: -3
-    - Key: PoorPlace
+    - Key: Loid
       Value:
         _serializedList:
         - Key: food

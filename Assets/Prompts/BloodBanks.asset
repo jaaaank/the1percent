@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BloodBanks
   m_EditorClassIdentifier: 
   hasThirdOption: 1
-  promptDescription: AAs you may know, it's legal to sell your blood plasma for some
+  promptDescription: As you may know, it's legal to sell your blood plasma for some
     quick cash. Currently, the legal limit is twice every seven days. However, the
     blood banks have been consistently lowering their pay rates for a while now,
     leaving many with a dwindling income.
@@ -40,7 +40,7 @@ MonoBehaviour:
     financial crisis, and is now expected to reach $48 billion by 2025. \n\nhttps://www.mississippifreepress.org/wp-content/uploads/2022/07/The-Interlinkage-between-Blood-Plasma-Donation-and-Poverty-February-2021.pdf"
   yesCountyEffects:
     _serializedList:
-    - Key: PoorPlace
+    - Key: Rein
       Value:
         _serializedList:
         - Key: food
@@ -49,7 +49,7 @@ MonoBehaviour:
           Value: 2
         - Key: wealth
           Value: 2
-    - Key: WealthyPlace
+    - Key: Taga
       Value:
         _serializedList:
         - Key: food
@@ -60,7 +60,7 @@ MonoBehaviour:
           Value: -5
   midCountyEffects:
     _serializedList:
-    - Key: PoorPlace
+    - Key: Rein
       Value:
         _serializedList:
         - Key: food
@@ -69,7 +69,7 @@ MonoBehaviour:
           Value: 10
         - Key: wealth
           Value: -5
-    - Key: WealthyPlace
+    - Key: Taga
       Value:
         _serializedList:
         - Key: food
@@ -80,7 +80,7 @@ MonoBehaviour:
           Value: -5
   noCountyEffects:
     _serializedList:
-    - Key: PoorPlace
+    - Key: Rein
       Value:
         _serializedList:
         - Key: food
@@ -89,7 +89,7 @@ MonoBehaviour:
           Value: -5
         - Key: wealth
           Value: -10
-    - Key: WealthyPlace
+    - Key: Taga
       Value:
         _serializedList:
         - Key: food
