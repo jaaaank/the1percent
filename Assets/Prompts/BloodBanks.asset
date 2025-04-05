@@ -17,6 +17,9 @@ MonoBehaviour:
     quick cash. Currently, the legal limit is twice every seven days. However, the
     blood banks have been consistently lowering their pay rates for a while now,
     leaving many with a dwindling income.
+  wealthyAdvice: This no matter to me
+  commonAdvice: Less fortunate people should probably not be forced to sell their
+    bodies for money
   yesText: Pass a law creating a fair minimum payout for plasma donors.
   midText: Ban paid plasma donations nationwide.
   noText: Do nothing.

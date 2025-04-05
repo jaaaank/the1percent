@@ -23,6 +23,8 @@ MonoBehaviour:
     despite the lobbying?
 
 '
+  wealthyAdvice: Me want money
+  commonAdvice: Me think other people should have money
   yesText: Pass a restriction
   midText: 
   noText: Do not pass any restriction

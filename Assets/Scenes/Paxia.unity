@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: -100}
+  m_AnchoredPosition: {x: 500, y: 25}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28040481
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 134509462}
   - component: {fileID: 134509461}
   m_Layer: 5
-  m_Name: Taga
+  m_Name: TagaN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Prompt description goes here
+  m_text: Advice goes here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -786,7 +786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 254}
+  m_AnchoredPosition: {x: 0, y: 312}
   m_SizeDelta: {x: 1200, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &295803340
@@ -1082,7 +1082,7 @@ Transform:
   m_GameObject: {fileID: 431780855}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6227597, y: -0.8788627, z: 1.8360273}
+  m_LocalPosition: {x: 0.91, y: -4.51, z: 81.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1264,8 +1264,8 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
+  m_InputActionsPerSecond: 20
+  m_RepeatDelay: 0.25
   m_ForceModuleActive: 0
 --- !u!114 &480932343
 MonoBehaviour:
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 789792007}
   - component: {fileID: 789792006}
   m_Layer: 5
-  m_Name: Patcha
+  m_Name: PatchaN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1561,7 +1561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: 25}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819700006
@@ -2017,7 +2017,7 @@ GameObject:
   - component: {fileID: 1008595661}
   - component: {fileID: 1008595660}
   m_Layer: 5
-  m_Name: Loid
+  m_Name: LoidN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2151,7 +2151,7 @@ GameObject:
   - component: {fileID: 1017104197}
   - component: {fileID: 1017104196}
   m_Layer: 5
-  m_Name: Resare
+  m_Name: ResareN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2319,9 +2319,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hapiness: 0
-  wealth: 75
-  food: 75
-  meds: 75
+  wealth: 15
+  food: 45
+  meds: 32
 --- !u!212 &1079489742
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2410,7 +2410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: -100}
+  m_AnchoredPosition: {x: -500, y: 25}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1173408915
@@ -2956,7 +2956,7 @@ GameObject:
   - component: {fileID: 1414760292}
   - component: {fileID: 1414760291}
   m_Layer: 5
-  m_Name: Pajo
+  m_Name: PajoN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3224,7 +3224,7 @@ GameObject:
   - component: {fileID: 1459084510}
   - component: {fileID: 1459084509}
   m_Layer: 5
-  m_Name: Rein
+  m_Name: ReinN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3865,7 +3865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1800175062
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3874,7 +3874,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800175061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3882,7 +3882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 254}
+  m_AnchoredPosition: {x: 0, y: 312}
   m_SizeDelta: {x: 1200, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1800175063
@@ -4318,6 +4318,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d1faf8a623d86714c848eea61db873d2, type: 2}
   - {fileID: 11400000, guid: c393597a0e476134295d1fcc12d5ef1b, type: 2}
   - {fileID: 11400000, guid: b308b458355b84643b5b1915035cb354, type: 2}
+  - {fileID: 11400000, guid: dd0c15ed9e64f364084ea2f4a1a6ea49, type: 2}
   currentPrompt: {fileID: 0}
   description: {fileID: 1800175063}
   advice: {fileID: 273257181}
@@ -4331,10 +4332,7 @@ MonoBehaviour:
   eaButton: {fileID: 108073722}
   richButton: {fileID: 2081733694}
   poorButton: {fileID: 243877720}
-  county1: {fileID: 1240162294}
-  county2: {fileID: 1568317254}
-  county3: {fileID: 1266530250}
-  numCounties: 0
+  counties: {fileID: 431780855}
   nationalHappiness: 0
 --- !u!1 &2081733693
 GameObject:

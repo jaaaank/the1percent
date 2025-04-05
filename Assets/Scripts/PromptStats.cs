@@ -13,6 +13,11 @@ public class PromptStats : ScriptableObject
     [TextArea(3,10)]
     public string promptDescription;
 
+    [TextArea(3,4)]
+    public string wealthyAdvice;
+    [TextArea(3, 4)]
+    public string commonAdvice;
+
     public string yesText;
     public string midText;
     public string noText;
