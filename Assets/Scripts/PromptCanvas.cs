@@ -21,8 +21,10 @@ public class PromptCanvas : MonoBehaviour
     string randPoor;
     string randRich;
 
+    [Header ("Backgrounds")]
     public GameObject Map;
     public GameObject AdRoom;
+    public GameObject MidtermBg;
 
     [Header("Buttons")]
     public Button yButton;
@@ -250,6 +252,7 @@ public class PromptCanvas : MonoBehaviour
         //Hiding Midterm Screens
         midtermScore.gameObject.SetActive(false);
         midtermEscape.gameObject.SetActive(false);
+        MidtermBg.SetActive(false);
     }
 
     public void MidtermEntrance()
@@ -267,16 +270,48 @@ public class PromptCanvas : MonoBehaviour
         //Showing Midterm Screens
         midtermScore.gameObject.SetActive(true);
         midtermEscape.gameObject.SetActive(true);
+        MidtermBg.SetActive(true);
 
         if (nationalHappiness >= 66)
         {
             midtermScore.text = ("Things seem to be looking good for the current president's approval ratings. But time will tell if it is enough for the next election in a few months.");
-        } else if (nationalHappiness >= 50 && nationalHappiness <= 33)
+        } else if (nationalHappiness < 66 && nationalHappiness >= 33)
         {
             midtermScore.text = ("Things are dicey for the current president's approval rating. But there is still time to recover for the next election in a few months.");
         } else
         {
             midtermScore.text = ("Things aren't looking good for the current president's approval. With only so many months left will the President be able to recover?");
+        }
+    }
+
+    public void EndScreen()
+    {
+        //Main screen buttons
+        aButton.gameObject.SetActive(false);
+        yButton.gameObject.SetActive(false);
+        nButton.gameObject.SetActive(false);
+        mButton.gameObject.SetActive(false);
+        description.gameObject.SetActive(false);
+        //counties
+        counties.SetActive(false);
+        Map.SetActive(false);
+        //Showing Midterm Screens
+        midtermScore.gameObject.SetActive(true);
+
+        if (nationalHappiness >= 75)
+        {
+            midtermScore.text = ("You have earned the trust of your people and have been reelected for a second term in a landslide victory.");
+        }
+        else if (nationalHappiness < 75 && nationalHappiness >= 50)
+        {
+            midtermScore.text = ("The race was close but you won just slighly.");
+        }
+        else if (nationalHappiness < 50 &&  nationalHappiness >= 25)
+        {
+            midtermScore.text = ("The race was close but your opponent pulled ahead, winning the election. You will be remembered as a decent president");
+        } else
+        {
+            midtermScore.text = ("You have lost the election in a landslide. You will be remembered as the worst president in Paxia's history.");
         }
     }
 
