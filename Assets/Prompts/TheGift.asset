@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: TheGift
+  m_EditorClassIdentifier: 
+  hasThirdOption: 0
+  promptDescription: "Some companies have noticed the treasury is getting empty and,
+    happy with your decisions, have offered up some of their money to keep you afloat.\r"
+  wealthyAdvice: 'Take the money, we need the cash
+
+'
+  commonAdvice: "Be wary, they could ask for something later, or the people could
+    see this as a bribe\r"
+  yesText: "Accept the \u201Cgift\u201D "
+  midText: 
+  noText: "Refuse the \u201Cgift\u201D "
+  yesMoney: 25
+  midMoney: 0
+  noMoney: 0
+  yesResponse: 'They are happy to contribute and will be in touch
+
+'
+  midResponse: 
+  noResponse: 'They look angry and wish you luck.
+
+'
+  yesCountyEffects:
+    _serializedList: []
+  midCountyEffects:
+    _serializedList: []
+  noCountyEffects:
+    _serializedList: []

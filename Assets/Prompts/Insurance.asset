@@ -28,9 +28,9 @@ MonoBehaviour:
   yesText: Pass a restriction
   midText: 
   noText: Do not pass any restriction
-  yesMoney: -10
+  yesMoney: -25
   midMoney: 0
-  noMoney: 5
+  noMoney: 10
   yesResponse: The middle and lower classes thank you for protecting them!
   midResponse: 
   noResponse: The middle and lower class are losing money, and their approval of

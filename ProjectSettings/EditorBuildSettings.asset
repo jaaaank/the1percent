@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Paxia.unity
+    guid: b86a0e4cf7ed5984f9c7b6aa1214b5fa
+  - enabled: 1
+    path: Assets/Scenes/NoMoney.unity
+    guid: d0ad168badb427d41a54e9e26e49c54f
   m_configObjects: {}

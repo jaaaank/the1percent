@@ -10,26 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
-  m_Name: TrickleDown
+  m_Name: GeoThermal
   m_EditorClassIdentifier: 
   hasThirdOption: 0
-  promptDescription: Your advisor is telling you about his awesome new idea, "trickle
-    down economics." He says that if you introduce sweeping tax cuts across the upper
-    class, that wealth will trickle down through society and reach the working class!
-  wealthyAdvice: This good idea reagan did it
-  commonAdvice: This bad idea reagan did it
-  yesText: Try it out!
+  promptDescription: 'Some farmers discovered a new hot spring in the country. We
+    could use this for geothermal power or build a resort for tourists there.
+
+'
+  wealthyAdvice: We already use oil for our power source, there is no reason for
+    us to make the switch when it will cost more but won't bring in revenue. We should
+    convert it to a resort so tourists come in and spend money, increasing the economy.
+  commonAdvice: We should build the geothermal plant so we could become a greener
+    nation, diversifying where we get our power, and potential reliance on other
+    nations.
+  yesText: 'Build the Geothermal Plant '
   midText: 
-  noText: Sounds like a bad idea.
-  yesMoney: -40
+  noText: 'Build the Resort '
+  yesMoney: -20
   midMoney: 0
   noMoney: 0
-  yesResponse: A bad idea it is. "Trickle down economics" was a real idea proposed
-    and attempted by the Reagan administration. 40 years later, the wealth has never
-    trickled down.
+  yesResponse: 'The middle and lower classes are excited for the start of switching
+    over to cleaner, more sustainable energy.
+
+'
   midResponse: 
-  noResponse: '"Trickle down economics" was a real idea proposed and attempted by
-    the Reagan administration. 40 years later, the wealth has never trickled down.'
+  noResponse: The Upper Class is excited for the income this resort will bring as
+    well as the continuation of using their oil companies.
   yesCountyEffects:
     _serializedList:
     - Key: Pajo
@@ -40,7 +46,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: -10
+          Value: 10
     - Key: Resare
       Value:
         _serializedList:
@@ -49,7 +55,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: -10
+          Value: 10
     - Key: Loid
       Value:
         _serializedList:
@@ -58,7 +64,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: -10
+          Value: 10
   midCountyEffects:
     _serializedList: []
   noCountyEffects:

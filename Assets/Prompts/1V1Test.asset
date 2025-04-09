@@ -31,20 +31,20 @@ MonoBehaviour:
       Value:
         _serializedList:
         - Key: food
-          Value: 100
+          Value: 25
         - Key: meds
-          Value: 100
+          Value: 25
         - Key: wealth
-          Value: 100
+          Value: 25
     - Key: RichCounty
       Value:
         _serializedList:
         - Key: food
-          Value: -100
+          Value: -25
         - Key: meds
-          Value: -100
+          Value: -25
         - Key: wealth
-          Value: -100
+          Value: -25
   midCountyEffects:
     _serializedList: []
   noCountyEffects:
@@ -53,17 +53,17 @@ MonoBehaviour:
       Value:
         _serializedList:
         - Key: food
-          Value: -100
+          Value: -25
         - Key: meds
-          Value: -100
+          Value: -25
         - Key: wealth
-          Value: -100
+          Value: -25
     - Key: RichCounty
       Value:
         _serializedList:
         - Key: food
-          Value: 100
+          Value: 25
         - Key: meds
-          Value: 100
+          Value: 25
         - Key: wealth
-          Value: 100
+          Value: 25

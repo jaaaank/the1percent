@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: OilFields
+  m_EditorClassIdentifier: 
+  hasThirdOption: 0
+  promptDescription: "A farmer in Rein has struck oil when installing a new irrigation
+    system. We could use it for the nation or let him decide what he wants to do
+    with it.\r"
+  wealthyAdvice: We should use the oil for ourselves. Give it to me and I can have
+    an oil well within the week selling oil for us.
+  commonAdvice: The oil is on the land he purchased. It is his to do with as he will
+    and we should leave it to him.
+  yesText: 'Use the oil '
+  midText: 
+  noText: 'Let the farmer do as he will '
+  yesMoney: 20
+  midMoney: 0
+  noMoney: -15
+  yesResponse: "The oil well is set up and bringing us more revenue\r"
+  midResponse: 
+  noResponse: The farmer sold the oil to another country and we are low in stock.
+    We will have to buy some from another nation.
+  yesCountyEffects:
+    _serializedList: []
+  midCountyEffects:
+    _serializedList: []
+  noCountyEffects:
+    _serializedList:
+    - Key: Rein
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 25

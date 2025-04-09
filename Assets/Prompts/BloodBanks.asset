@@ -23,9 +23,9 @@ MonoBehaviour:
   yesText: Pass a law creating a fair minimum payout for plasma donors.
   midText: Ban paid plasma donations nationwide.
   noText: Do nothing.
-  yesMoney: -1
-  midMoney: -5
-  noMoney: 4
+  yesMoney: -3
+  midMoney: -15
+  noMoney: 12
   yesResponse: "This happens in real life. Draining that amount of blood has serious
     adverse health effects, but some people need that additional income to survive.
     These blood collection centers set up in the poorest neighborhoods. The industry

@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class PromptCanvas : MonoBehaviour
 {
@@ -17,6 +17,7 @@ public class PromptCanvas : MonoBehaviour
     public TextMeshProUGUI description;
     public TextMeshProUGUI advice;
     public TextMeshProUGUI natHapiness;
+    public TextMeshProUGUI natTreasury;
 
     string randPoor;
     string randRich;
@@ -59,7 +60,7 @@ public class PromptCanvas : MonoBehaviour
         int choice = Random.Range(0, prompts.Count);
         currentPrompt = prompts[choice];
         //this VV is for making sure prompts don't repeat
-        //prompts.RemoveAt(choice);
+        prompts.RemoveAt(choice);
 
         if (currentPrompt.hasThirdOption)
         {
@@ -125,11 +126,24 @@ public class PromptCanvas : MonoBehaviour
         natHapiness.text = "National Approval: " + nationalHappiness + "%";
 
         choicesMade++;
-        if (choicesMade == (int)(prompts.Count / 2 + 1))
+        if (choicesMade == 5)
         {
             MidtermEntrance();
         }
+        natTreasury.text = "National Treasury: "+money;
+        if (money <= 0)
+        {
+            SceneManager.LoadScene("NoMoney");
+        }
+        if (prompts.Count == 0) 
+        {
+            EndScreen();
+        }
+    }
 
+    public void replay()
+    {
+        SceneManager.LoadScene("Paxia");
     }
 
     public void yesPressed()
@@ -296,6 +310,7 @@ public class PromptCanvas : MonoBehaviour
         counties.SetActive(false);
         Map.SetActive(false);
         //Showing Midterm Screens
+        MidtermBg.gameObject.SetActive(true);
         midtermScore.gameObject.SetActive(true);
 
         if (nationalHappiness >= 75)

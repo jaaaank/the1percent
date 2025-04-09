@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
-  m_Name: TrickleDown
+  m_Name: Tarriffs
   m_EditorClassIdentifier: 
   hasThirdOption: 0
-  promptDescription: Your advisor is telling you about his awesome new idea, "trickle
-    down economics." He says that if you introduce sweeping tax cuts across the upper
-    class, that wealth will trickle down through society and reach the working class!
-  wealthyAdvice: This good idea reagan did it
-  commonAdvice: This bad idea reagan did it
-  yesText: Try it out!
+  promptDescription: "We need to focus on internal production. Should we create tariffs
+    on imported goods so our people start producing?\r"
+  wealthyAdvice: "No, we don\u2019t have the infrastructure to support and companies
+    already outsource hurting their business\r\n"
+  commonAdvice: "No, the goods people buy will cost more, punishing them.\r"
+  yesText: 'Create the Tariffs '
   midText: 
-  noText: Sounds like a bad idea.
-  yesMoney: -40
+  noText: "Don\u2019t create the Tariffs "
+  yesMoney: 10
   midMoney: 0
   noMoney: 0
-  yesResponse: A bad idea it is. "Trickle down economics" was a real idea proposed
-    and attempted by the Reagan administration. 40 years later, the wealth has never
-    trickled down.
-  midResponse: 
+  yesResponse: 'We have more money in the treasury but the people are losing money
+
+'
+  midResponse: "The economy remains the same.\r"
   noResponse: '"Trickle down economics" was a real idea proposed and attempted by
     the Reagan administration. 40 years later, the wealth has never trickled down.'
   yesCountyEffects:
@@ -40,7 +40,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: -10
+          Value: 20
     - Key: Resare
       Value:
         _serializedList:
@@ -49,7 +49,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: -10
+          Value: 0
     - Key: Loid
       Value:
         _serializedList:
@@ -58,7 +58,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: -10
+          Value: 0
   midCountyEffects:
     _serializedList: []
   noCountyEffects:

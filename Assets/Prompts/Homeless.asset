@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: Homeless
+  m_EditorClassIdentifier: 
+  hasThirdOption: 0
+  promptDescription: "We have too many homeless people in this country. Should we
+    build shelters?\r"
+  wealthyAdvice: Yes, but under the condition they work in the factories
+  commonAdvice: "Yes, people can\u2019t survive without shelter, it is a basic human
+    right"
+  yesText: 'Build the Shelters '
+  midText: 
+  noText: 'Don''t build the Shelters '
+  yesMoney: -20
+  midMoney: 0
+  noMoney: 0
+  yesResponse: The people are happy with the shelters
+  midResponse: 
+  noResponse: The people are unhappy with all the homeless on the streets
+  yesCountyEffects:
+    _serializedList: []
+  midCountyEffects:
+    _serializedList: []
+  noCountyEffects:
+    _serializedList: []
