@@ -37,11 +37,17 @@ public class PromptCanvas : MonoBehaviour
     public GameObject counties;
     public float nationalHappiness;
 
+    [Header("Midterms")]
+    public int choicesMade;
+    public Button midtermEscape;
+    public TextMeshProUGUI midtermScore;
+
     private void Start()
     {
         gameObject.SetActive(false);
         eaButton.gameObject.SetActive(false);
         AdRoom.SetActive(false);
+        choicesMade = 0;
         getPrompt();
     }
 
@@ -115,6 +121,12 @@ public class PromptCanvas : MonoBehaviour
         nationalHappiness /= counties.transform.childCount;
         //nationalHappiness = (county1.GetComponent<County>().hapiness + county2.GetComponent<County>().hapiness + county3.GetComponent<County>().hapiness) / numCounties;
         natHapiness.text = "National Approval: " + nationalHappiness + "%";
+
+        choicesMade++;
+        if (choicesMade == (int)(prompts.Count / 2 + 1))
+        {
+            MidtermEntrance();
+        }
 
     }
 
@@ -220,6 +232,52 @@ public class PromptCanvas : MonoBehaviour
     {
         advice.gameObject.SetActive(true);
         advice.text = currentPrompt.commonAdvice;
+    }
+
+    public void MidtermExit()
+    {
+        
+        aButton.gameObject.SetActive(true);
+        if (currentPrompt.hasThirdOption)
+        {
+            mButton.gameObject.SetActive(true);
+        }
+        yButton.gameObject.SetActive(true);
+        nButton.gameObject.SetActive(true);
+        description.gameObject.SetActive(true);
+        counties.SetActive(true);
+        Map.SetActive(true);
+        //Hiding Midterm Screens
+        midtermScore.gameObject.SetActive(false);
+        midtermEscape.gameObject.SetActive(false);
+    }
+
+    public void MidtermEntrance()
+    {
+
+        //Main screen buttons
+        aButton.gameObject.SetActive(false);
+        yButton.gameObject.SetActive(false);
+        nButton.gameObject.SetActive(false);
+        mButton.gameObject.SetActive(false);
+        description.gameObject.SetActive(false);
+        //counties
+        counties.SetActive(false);
+        Map.SetActive(false);
+        //Showing Midterm Screens
+        midtermScore.gameObject.SetActive(true);
+        midtermEscape.gameObject.SetActive(true);
+
+        if (nationalHappiness >= 66)
+        {
+            midtermScore.text = ("Things seem to be looking good for the current president's approval ratings. But time will tell if it is enough for the next election in a few months.");
+        } else if (nationalHappiness >= 50 && nationalHappiness <= 33)
+        {
+            midtermScore.text = ("Things are dicey for the current president's approval rating. But there is still time to recover for the next election in a few months.");
+        } else
+        {
+            midtermScore.text = ("Things aren't looking good for the current president's approval. With only so many months left will the President be able to recover?");
+        }
     }
 
 }

@@ -25,6 +25,7 @@ public class County : MonoBehaviour
     public void updateHapiness()
     { 
         hapiness = (wealth+food+meds)/3;
+        if (hapiness > 100 ) { hapiness = 100; }
         Vector3 color = Vector3.Lerp(new Vector3(1, 0, 0), new Vector3(0, 1, 0), hapiness / 100);
         gameObject.GetComponent<SpriteRenderer>().color = new Vector4(color.x, color.y, color.z, 1);
     }
