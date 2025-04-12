@@ -49,9 +49,9 @@ MonoBehaviour:
         - Key: food
           Value: 0
         - Key: meds
-          Value: 2
+          Value: 10
         - Key: wealth
-          Value: 2
+          Value: 10
     - Key: Taga
       Value:
         _serializedList:
@@ -61,6 +61,24 @@ MonoBehaviour:
           Value: 0
         - Key: wealth
           Value: -5
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
   midCountyEffects:
     _serializedList:
     - Key: Rein
@@ -69,27 +87,7 @@ MonoBehaviour:
         - Key: food
           Value: 0
         - Key: meds
-          Value: 10
-        - Key: wealth
-          Value: -5
-    - Key: Taga
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: 0
-        - Key: wealth
-          Value: -5
-  noCountyEffects:
-    _serializedList:
-    - Key: Rein
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: -5
+          Value: 20
         - Key: wealth
           Value: -10
     - Key: Taga
@@ -98,6 +96,62 @@ MonoBehaviour:
         - Key: food
           Value: 0
         - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: -10
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 15
+        - Key: wealth
+          Value: -10
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 15
+        - Key: wealth
+          Value: -10
+  noCountyEffects:
+    _serializedList:
+    - Key: Rein
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -15
+        - Key: wealth
+          Value: -15
+    - Key: Taga
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
           Value: 0
         - Key: wealth
-          Value: 5
+          Value: 15
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -15
+        - Key: wealth
+          Value: -15
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -15
+        - Key: wealth
+          Value: -15

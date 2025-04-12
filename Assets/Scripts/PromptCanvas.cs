@@ -86,43 +86,35 @@ public class PromptCanvas : MonoBehaviour
 
         if (currentPrompt.promptDescription.Contains("PoorCounty"))
         {
-            //EVENTUALLY replace this VV with an actual random pick of poor counties
-            randPoor = "Loid";
+            randPoor = randmCounty("Poor");
             description.text = currentPrompt.promptDescription.Replace("PoorCounty", randPoor);
             yButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = currentPrompt.yesText.Replace("PoorCounty", randPoor);
             nButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = currentPrompt.noText.Replace("PoorCounty", randPoor);
         }
         if (currentPrompt.promptDescription.Contains("RichCounty"))
         {
-            //EVENTUALLY replace this VV also with an actual random pick of poor counties
-            randRich = "Resare";
+            randRich = randmCounty("Wealthy");
             description.text = currentPrompt.promptDescription.Replace("RichCounty", randRich);
             yButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = currentPrompt.yesText.Replace("RichCounty", randRich);
             nButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = currentPrompt.noText.Replace("RichCounty", randRich);
         }
         if (currentPrompt.promptDescription.Contains("RichCounty")&&(currentPrompt.promptDescription.Contains("PoorCounty")))
         {
-            //EVENTUALLY replace this VV also with an actual random pick of poor counties
-            randRich = "Resare";
+            randRich = randmCounty("Wealthy");
             description.text = currentPrompt.promptDescription.Replace("RichCounty", randRich);
             yButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = currentPrompt.yesText.Replace("RichCounty", randRich);
             nButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = currentPrompt.noText.Replace("RichCounty", randRich);
-            //EVENTUALLY replace this VV with an actual random pick of poor counties
-            randPoor = "Loid";
+            randPoor = randmCounty("Poor");
             description.text = description.text.Replace("PoorCounty", randPoor);
             yButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = yButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text.Replace("PoorCounty", randPoor);
             nButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = nButton.gameObject.GetComponentInChildren<TextMeshProUGUI>().text.Replace("PoorCounty", randPoor);
         }
 
-
-
-        //Cleaned up this VV code a little so it just loops through all the counties and we don't have to count them up individually
         for (int i = 0; i < counties.transform.childCount-1; i++)
         {
             nationalHappiness += counties.transform.GetChild(i).gameObject.GetComponent<County>().hapiness;
         }
         nationalHappiness /= counties.transform.childCount;
-        //nationalHappiness = (county1.GetComponent<County>().hapiness + county2.GetComponent<County>().hapiness + county3.GetComponent<County>().hapiness) / numCounties;
         natHapiness.text = "National Approval: " + nationalHappiness + "%";
 
         choicesMade++;
@@ -146,6 +138,39 @@ public class PromptCanvas : MonoBehaviour
         SceneManager.LoadScene("Paxia");
     }
 
+    public string randmCounty(string wealth)
+    {
+        List<string> toPickFrom = new List<string>();
+        if (wealth == "Wealthy")
+        {
+            foreach (County i in counties.gameObject.GetComponentsInChildren<County>())
+            {
+                if (i.hapiness > 50)
+                {
+                    toPickFrom.Add(i.gameObject.name);
+                }
+            }
+        }
+        if (wealth == "Poor")
+        {
+            foreach (County i in counties.gameObject.GetComponentsInChildren<County>())
+            {
+                if (i.hapiness < 50)
+                {
+                    toPickFrom.Add(i.gameObject.name);
+                }
+            }
+        }
+        if (toPickFrom.Count == 0)
+        {//if somehow all counties are above or below 50 happiness there is a 1/9 chance that it could pick Rein twice which would not break the game but would be weird
+            return "Rein";
+        }
+        else
+        {
+            int pickRand = Random.Range(0, toPickFrom.Count - 1);
+            return toPickFrom[pickRand];
+        }
+    }
     public void yesPressed()
     {
         money += currentPrompt.yesMoney;

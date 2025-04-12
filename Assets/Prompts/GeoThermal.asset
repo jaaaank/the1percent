@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: GeoThermal
   m_EditorClassIdentifier: 
   hasThirdOption: 0
-  promptDescription: 'Some farmers discovered a new hot spring in the country. We
-    could use this for geothermal power or build a resort for tourists there.
+  promptDescription: 'Some farmers discovered a new hot spring in Rein. We could
+    use this for geothermal power, helping the entire nation''s economy, or allow
+    a private company to build a resort for tourists there.
 
 '
   wealthyAdvice: We already use oil for our power source, there is no reason for
@@ -38,6 +39,15 @@ MonoBehaviour:
     well as the continuation of using their oil companies.
   yesCountyEffects:
     _serializedList:
+    - Key: Rein
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
     - Key: Pajo
       Value:
         _serializedList:
@@ -47,7 +57,52 @@ MonoBehaviour:
           Value: 0
         - Key: wealth
           Value: 10
+    - Key: Doit
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
+    - Key: Ninia
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
+    - Key: Moro
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
+    - Key: Taga
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
     - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 10
+    - Key: Patcha
       Value:
         _serializedList:
         - Key: food
@@ -69,15 +124,15 @@ MonoBehaviour:
     _serializedList: []
   noCountyEffects:
     _serializedList:
-    - Key: Pajo
+    - Key: Rein
       Value:
         _serializedList:
         - Key: food
-          Value: 0
+          Value: 15
         - Key: meds
-          Value: 0
+          Value: 5
         - Key: wealth
-          Value: 0
+          Value: 45
     - Key: Resare
       Value:
         _serializedList:
@@ -86,8 +141,8 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: 0
-    - Key: Loid
+          Value: 20
+    - Key: Pajo
       Value:
         _serializedList:
         - Key: food
@@ -95,4 +150,4 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: 0
+          Value: 20

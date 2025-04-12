@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: OilFields
   m_EditorClassIdentifier: 
   hasThirdOption: 0
-  promptDescription: "A farmer in Rein has struck oil when installing a new irrigation
-    system. We could use it for the nation or let him decide what he wants to do
-    with it.\r"
+  promptDescription: "A farmer in PoorCounty has struck oil when installing a new
+    irrigation system. We could use it for the nation or let him decide what he wants
+    to do with it.\r"
   wealthyAdvice: We should use the oil for ourselves. Give it to me and I can have
     an oil well within the week selling oil for us.
   commonAdvice: The oil is on the land he purchased. It is his to do with as he will
@@ -31,10 +31,6 @@ MonoBehaviour:
   noResponse: The farmer sold the oil to another country and we are low in stock.
     We will have to buy some from another nation.
   yesCountyEffects:
-    _serializedList: []
-  midCountyEffects:
-    _serializedList: []
-  noCountyEffects:
     _serializedList:
     - Key: Rein
       Value:
@@ -44,4 +40,71 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: 25
+          Value: 5
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 5
+    - Key: Loid
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 5
+    - Key: Moro
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 5
+    - Key: Doit
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 5
+    - Key: Taga
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 5
+    - Key: Ninia
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 5
+  midCountyEffects:
+    _serializedList: []
+  noCountyEffects:
+    _serializedList:
+    - Key: PoorCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 5
+        - Key: meds
+          Value: 5
+        - Key: wealth
+          Value: 50

@@ -16,10 +16,10 @@ MonoBehaviour:
   promptDescription: PoorCounty says that RichCounty has too much food.
   wealthyAdvice: maybe RichCounty earned that food by doing hard work
   commonAdvice: please give us food PoorCounty is starving
-  yesText: give PoorCounty more food
+  yesText: Give PoorCounty more food
   midText: 
-  noText: give RichCounty more food
-  yesMoney: -40
+  noText: Give RichCounty more food
+  yesMoney: -20
   midMoney: 0
   noMoney: 0
   yesResponse: are these even gonna get used idfk
