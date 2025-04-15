@@ -22,9 +22,9 @@ MonoBehaviour:
   yesMoney: -20
   midMoney: 0
   noMoney: 0
-  yesResponse: are these even gonna get used idfk
+  yesResponse: They thank you!
   midResponse: 
-  noResponse: idfk if these are gonna get used
+  noResponse: They thank you!
   yesCountyEffects:
     _serializedList:
     - Key: PoorCounty
@@ -40,11 +40,11 @@ MonoBehaviour:
       Value:
         _serializedList:
         - Key: food
-          Value: -25
+          Value: -5
         - Key: meds
-          Value: -25
+          Value: -5
         - Key: wealth
-          Value: -25
+          Value: -5
   midCountyEffects:
     _serializedList: []
   noCountyEffects:
@@ -62,8 +62,8 @@ MonoBehaviour:
       Value:
         _serializedList:
         - Key: food
-          Value: 25
+          Value: 5
         - Key: meds
-          Value: 25
+          Value: 5
         - Key: wealth
-          Value: 25
+          Value: 5

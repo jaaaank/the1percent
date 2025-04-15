@@ -22,6 +22,9 @@ public class PromptCanvas : MonoBehaviour
     string randPoor;
     string randRich;
 
+    public GameObject responseCanvas;
+    public TextMeshProUGUI response;
+
     [Header ("Backgrounds")]
     public GameObject Map;
     public GameObject AdRoom;
@@ -56,6 +59,7 @@ public class PromptCanvas : MonoBehaviour
 
     public void getPrompt()
     {
+        responseCanvas.SetActive(false);
         gameObject.SetActive(true);
         int choice = Random.Range(0, prompts.Count);
         currentPrompt = prompts[choice];
@@ -175,21 +179,27 @@ public class PromptCanvas : MonoBehaviour
     {
         money += currentPrompt.yesMoney;
         updateCounties(currentPrompt.yesCountyEffects);
-        getPrompt();
+        gameObject.SetActive(false);
+        responseCanvas.SetActive(true);
+        response.text = currentPrompt.yesResponse;
     }
 
     public void midPressed()
     {
         money += currentPrompt.midMoney;
         updateCounties(currentPrompt.midCountyEffects);
-        getPrompt();
+        gameObject.SetActive(false);
+        responseCanvas.SetActive(true);
+        response.text = currentPrompt.midResponse;
     }
 
     public void noPressed() 
     {
         money += currentPrompt.noMoney;
         updateCounties(currentPrompt.noCountyEffects);
-        getPrompt();
+        gameObject.SetActive(false);
+        responseCanvas.SetActive(true);
+        response.text = currentPrompt.noResponse;
     }
 
     public void updateCounties(SerializedDictionary<string, SerializedDictionary<string, float>> stats)

@@ -23,8 +23,9 @@ MonoBehaviour:
     despite the lobbying?
 
 '
-  wealthyAdvice: Me want money
-  commonAdvice: Me think other people should have money
+  wealthyAdvice: The CEO works hard for his money.
+  commonAdvice: Allowing this to happen will put the lower and middle classes at
+    an even greater disadvantage
   yesText: Pass a restriction
   midText: 
   noText: Do not pass any restriction
@@ -33,9 +34,8 @@ MonoBehaviour:
   noMoney: 10
   yesResponse: The middle and lower classes thank you for protecting them!
   midResponse: 
-  noResponse: The middle and lower class are losing money, and their approval of
-    you has dropped. But hey, at least you got some money, and the rich people like
-    you more.
+  noResponse: 'The middle and lower class are losing money, and their approval of
+    you has dropped. '
   yesCountyEffects:
     _serializedList:
     - Key: Pajo
@@ -44,27 +44,54 @@ MonoBehaviour:
         - Key: food
           Value: 0
         - Key: meds
-          Value: 0
+          Value: 20
         - Key: wealth
-          Value: -10
+          Value: 20
     - Key: Resare
       Value:
         _serializedList:
         - Key: food
           Value: 0
         - Key: meds
-          Value: 3
+          Value: 20
         - Key: wealth
-          Value: 3
+          Value: 20
     - Key: Loid
       Value:
         _serializedList:
         - Key: food
           Value: 0
         - Key: meds
-          Value: 7
+          Value: 20
         - Key: wealth
-          Value: 7
+          Value: 20
+    - Key: Ninia
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -5
+    - Key: Doit
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -5
+    - Key: Taga
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -5
   midCountyEffects:
     _serializedList: []
   noCountyEffects:
@@ -75,24 +102,51 @@ MonoBehaviour:
         - Key: food
           Value: 0
         - Key: meds
-          Value: 0
+          Value: -15
         - Key: wealth
-          Value: 10
+          Value: -15
     - Key: Resare
       Value:
         _serializedList:
         - Key: food
           Value: 0
         - Key: meds
-          Value: -3
+          Value: -15
         - Key: wealth
-          Value: -3
+          Value: -15
     - Key: Loid
       Value:
         _serializedList:
         - Key: food
           Value: 0
         - Key: meds
-          Value: -7
+          Value: -15
         - Key: wealth
-          Value: -7
+          Value: -15
+    - Key: Moro
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -5
+        - Key: wealth
+          Value: 20
+    - Key: Doit
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -5
+        - Key: wealth
+          Value: 10
+    - Key: Doit
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -5
+        - Key: wealth
+          Value: 10
