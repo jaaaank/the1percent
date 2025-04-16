@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: a308430979695f349bbc64cc00caedaf
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 22078f304127a2346a57ea1a40d09567
+  - enabled: 1
     path: Assets/Scenes/Paxia.unity
     guid: b86a0e4cf7ed5984f9c7b6aa1214b5fa
   - enabled: 1
