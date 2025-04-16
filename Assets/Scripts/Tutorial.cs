@@ -128,7 +128,7 @@ public class Tutorial : MonoBehaviour
         else if (sequence == 1)
         {
             sequence++;
-            description.text = ("The more red a county is, the more they disapprove of you as their president. The greener, the more they approve of you. You will make choices that determine thair approval ratings for your next election.");
+            description.text = ("The more red a county is, the more they disapprove of you as their president. The greener, the more they approve of you. You will make choices that determine their approval ratings for your next election.");
 
         }
         else if (sequence == 2)
