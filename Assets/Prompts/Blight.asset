@@ -10,41 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
-  m_Name: 1V1Test
+  m_Name: Blight
   m_EditorClassIdentifier: 
   hasThirdOption: 0
-  promptDescription: PoorCounty says that RichCounty has too much food.
-  wealthyAdvice: maybe RichCounty earned that food by doing hard work
-  commonAdvice: please give us food PoorCounty is starving
-  yesText: Give PoorCounty more food
+  promptDescription: "A famer playing with pesticides in PoorCounty and accidentally
+    introduced a blight to the county\u2019s stores. We can take some from RichCounty,
+    but it may make them struggle a bit with food."
+  wealthyAdvice: "It was the farmer\u2019s own stupidity. Why should others suffer
+    for the mistakes of one man?\r"
+  commonAdvice: "We should send them food so they don\u2019t starve.\r"
+  yesText: Send them food.
   midText: 
-  noText: Give RichCounty more food
-  yesMoney: -20
+  noText: Don't send them food.
+  yesMoney: -5
   midMoney: 0
   noMoney: 0
-  yesResponse: They thank you!
+  yesResponse: They thank you for your support!
   midResponse: 
-  noResponse: They thank you!
+  noResponse: Many people will starve because of this.
   yesCountyEffects:
     _serializedList:
     - Key: PoorCounty
       Value:
         _serializedList:
         - Key: food
-          Value: 25
+          Value: 20
         - Key: meds
-          Value: 25
+          Value: 0
         - Key: wealth
-          Value: 25
+          Value: 0
     - Key: RichCounty
       Value:
         _serializedList:
         - Key: food
           Value: -5
         - Key: meds
-          Value: -5
+          Value: 0
         - Key: wealth
-          Value: -5
+          Value: 0
   midCountyEffects:
     _serializedList: []
   noCountyEffects:
@@ -53,17 +56,17 @@ MonoBehaviour:
       Value:
         _serializedList:
         - Key: food
-          Value: -25
+          Value: -20
         - Key: meds
-          Value: -25
+          Value: 0
         - Key: wealth
-          Value: -25
+          Value: 0
     - Key: RichCounty
       Value:
         _serializedList:
         - Key: food
           Value: 5
         - Key: meds
-          Value: 5
+          Value: 0
         - Key: wealth
-          Value: 5
+          Value: 0

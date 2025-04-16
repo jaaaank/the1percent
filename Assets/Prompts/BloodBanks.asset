@@ -17,15 +17,15 @@ MonoBehaviour:
     quick cash. Currently, the legal limit is twice every seven days. However, the
     blood banks have been consistently lowering their pay rates for a while now,
     leaving many with a dwindling income.
-  wealthyAdvice: This no matter to me
-  commonAdvice: Less fortunate people should probably not be forced to sell their
-    bodies for money
+  wealthyAdvice: This is unimportant.
+  commonAdvice: Less fortunate people should not be forced to sell their bodies for
+    money.
   yesText: Pass a law creating a fair minimum payout for plasma donors.
   midText: Ban paid plasma donations nationwide.
   noText: Do nothing.
-  yesMoney: -3
+  yesMoney: -5
   midMoney: -15
-  noMoney: 12
+  noMoney: 15
   yesResponse: "This happens in real life. Draining that amount of blood has serious
     adverse health effects, but some people need that additional income to survive.
     These blood collection centers set up in the poorest neighborhoods. The industry
@@ -52,6 +52,24 @@ MonoBehaviour:
           Value: 10
         - Key: wealth
           Value: 10
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
     - Key: Taga
       Value:
         _serializedList:
@@ -61,24 +79,6 @@ MonoBehaviour:
           Value: 0
         - Key: wealth
           Value: -5
-    - Key: Resare
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: 10
-        - Key: wealth
-          Value: 10
-    - Key: Pajo
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: 10
-        - Key: wealth
-          Value: 10
   midCountyEffects:
     _serializedList:
     - Key: Rein
@@ -87,7 +87,25 @@ MonoBehaviour:
         - Key: food
           Value: 0
         - Key: meds
+          Value: 25
+        - Key: wealth
+          Value: -10
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
           Value: 20
+        - Key: wealth
+          Value: -10
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 25
         - Key: wealth
           Value: -10
     - Key: Taga
@@ -97,24 +115,6 @@ MonoBehaviour:
           Value: 0
         - Key: meds
           Value: 10
-        - Key: wealth
-          Value: -10
-    - Key: Resare
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: 15
-        - Key: wealth
-          Value: -10
-    - Key: Pajo
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: 15
         - Key: wealth
           Value: -10
   noCountyEffects:
@@ -128,15 +128,6 @@ MonoBehaviour:
           Value: -15
         - Key: wealth
           Value: -15
-    - Key: Taga
-      Value:
-        _serializedList:
-        - Key: food
-          Value: 0
-        - Key: meds
-          Value: 0
-        - Key: wealth
-          Value: 15
     - Key: Resare
       Value:
         _serializedList:
@@ -155,3 +146,12 @@ MonoBehaviour:
           Value: -15
         - Key: wealth
           Value: -15
+    - Key: Taga
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 15

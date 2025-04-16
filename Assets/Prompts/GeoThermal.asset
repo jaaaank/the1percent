@@ -27,9 +27,9 @@ MonoBehaviour:
   yesText: 'Build the Geothermal Plant '
   midText: 
   noText: 'Build the Resort '
-  yesMoney: -20
+  yesMoney: -15
   midMoney: 0
-  noMoney: 0
+  noMoney: -15
   yesResponse: 'The middle and lower classes are excited for the start of switching
     over to cleaner, more sustainable energy.
 

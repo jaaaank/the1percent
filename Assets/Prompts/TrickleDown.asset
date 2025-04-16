@@ -16,8 +16,8 @@ MonoBehaviour:
   promptDescription: Your advisor is telling you about his awesome new idea, "trickle
     down economics." He says that if you introduce sweeping tax cuts across the upper
     class, that wealth will trickle down through society and reach the working class!
-  wealthyAdvice: This good idea reagan did it
-  commonAdvice: This bad idea reagan did it
+  wealthyAdvice: This is a great idea! The wealth will trickle down over time.
+  commonAdvice: It's unlikely that the wealth will actually ever trickle down.
   yesText: Try it out!
   midText: 
   noText: Sounds like a bad idea.

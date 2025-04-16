@@ -15,21 +15,19 @@ MonoBehaviour:
   hasThirdOption: 0
   promptDescription: "We need to focus on internal production. Should we create tariffs
     on imported goods so our people start producing?\r"
-  wealthyAdvice: "No, we don\u2019t have the infrastructure to support and companies
-    already outsource hurting their business\r\n"
+  wealthyAdvice: This will earn us more money, we should do it.
   commonAdvice: "No, the goods people buy will cost more, punishing them.\r"
   yesText: 'Create the Tariffs '
   midText: 
   noText: "Don\u2019t create the Tariffs "
-  yesMoney: 10
+  yesMoney: 15
   midMoney: 0
   noMoney: 0
   yesResponse: 'We have more money in the treasury but the people are losing money
 
 '
-  midResponse: "The economy remains the same.\r"
-  noResponse: '"Trickle down economics" was a real idea proposed and attempted by
-    the Reagan administration. 40 years later, the wealth has never trickled down.'
+  midResponse: "\r"
+  noResponse: The economy remains the same.
   yesCountyEffects:
     _serializedList:
     - Key: Pajo
@@ -40,7 +38,52 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: 20
+          Value: -10
+    - Key: Patcha
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
+    - Key: Moro
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
+    - Key: Rein
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
+    - Key: Ninia
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
+    - Key: Doit
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
     - Key: Resare
       Value:
         _serializedList:
@@ -49,7 +92,7 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
-          Value: 0
+          Value: -10
     - Key: Loid
       Value:
         _serializedList:
@@ -58,7 +101,16 @@ MonoBehaviour:
         - Key: meds
           Value: 0
         - Key: wealth
+          Value: -10
+    - Key: Taga
+      Value:
+        _serializedList:
+        - Key: food
           Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: -10
   midCountyEffects:
     _serializedList: []
   noCountyEffects:

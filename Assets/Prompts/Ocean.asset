@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasThirdOption: 0
   promptDescription: We could rename the ocean surrounding us if we wish
-  wealthyAdvice: "Is this really the best use of our country\u2019s resources"
-  commonAdvice: We have other things to focus on
+  wealthyAdvice: "Is this really the best use of our country\u2019s resources?"
+  commonAdvice: We have other things to focus on.
   yesText: 'Rename it '
   midText: 
   noText: ' We have better things to do '
   yesMoney: -10
   midMoney: 0
   noMoney: 0
-  yesResponse: The Ocean is now called the Ocean of Paxia
+  yesResponse: The Ocean is now called the Ocean of Paxia.
   midResponse: 
   noResponse: 'Moving on.
 

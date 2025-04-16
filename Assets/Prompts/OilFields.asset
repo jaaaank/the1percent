@@ -20,7 +20,7 @@ MonoBehaviour:
     an oil well within the week selling oil for us.
   commonAdvice: The oil is on the land he purchased. It is his to do with as he will
     and we should leave it to him.
-  yesText: 'Use the oil '
+  yesText: Use the oil
   midText: 
   noText: 'Let the farmer do as he will '
   yesMoney: 20

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07fa656a1ded3a24a93324704bfa4e3e, type: 3}
+  m_Name: Hospital
+  m_EditorClassIdentifier: 
+  hasThirdOption: 1
+  promptDescription: PoorCounty says that RichCounty's hospital is too far for them.
+  wealthyAdvice: We cannot afford a new hospital. They just need to buy cars.
+  commonAdvice: While building a hospital would be ideal, it would cost us a lot
+    of money.
+  yesText: Build a hospital in PoorCounty
+  midText: Increase public transit options to the hospital
+  noText: Do nothing
+  yesMoney: -35
+  midMoney: 0
+  noMoney: -5
+  yesResponse: They thank you!
+  midResponse: They thank you!
+  noResponse: Many people will fall ill.
+  yesCountyEffects:
+    _serializedList:
+    - Key: PoorCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 30
+        - Key: wealth
+          Value: 25
+    - Key: RichCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 5
+        - Key: wealth
+          Value: -5
+  midCountyEffects:
+    _serializedList:
+    - Key: PoorCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 15
+        - Key: wealth
+          Value: 0
+    - Key: RichCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 0
+        - Key: wealth
+          Value: 15
+  noCountyEffects:
+    _serializedList:
+    - Key: PoorCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: -20
+        - Key: wealth
+          Value: -10
+    - Key: RichCounty
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 0
+        - Key: meds
+          Value: 5
+        - Key: wealth
+          Value: 15

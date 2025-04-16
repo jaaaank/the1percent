@@ -15,21 +15,75 @@ MonoBehaviour:
   hasThirdOption: 0
   promptDescription: "We have too many homeless people in this country. Should we
     build shelters?\r"
-  wealthyAdvice: Yes, but under the condition they work in the factories
+  wealthyAdvice: No, homeless people just don't work hard enough.
   commonAdvice: "Yes, people can\u2019t survive without shelter, it is a basic human
-    right"
+    right."
   yesText: 'Build the Shelters '
   midText: 
   noText: 'Don''t build the Shelters '
-  yesMoney: -20
+  yesMoney: -25
   midMoney: 0
   noMoney: 0
-  yesResponse: The people are happy with the shelters
+  yesResponse: The people are happy with the shelters.
   midResponse: 
-  noResponse: The people are unhappy with all the homeless on the streets
+  noResponse: The people are unhappy with all the homeless on the streets.
   yesCountyEffects:
-    _serializedList: []
+    _serializedList:
+    - Key: Rein
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 10
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 10
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: 10
+        - Key: meds
+          Value: 10
+        - Key: wealth
+          Value: 10
   midCountyEffects:
     _serializedList: []
   noCountyEffects:
-    _serializedList: []
+    _serializedList:
+    - Key: Rein
+      Value:
+        _serializedList:
+        - Key: food
+          Value: -10
+        - Key: meds
+          Value: -10
+        - Key: wealth
+          Value: -10
+    - Key: Pajo
+      Value:
+        _serializedList:
+        - Key: food
+          Value: -10
+        - Key: meds
+          Value: -10
+        - Key: wealth
+          Value: -10
+    - Key: Resare
+      Value:
+        _serializedList:
+        - Key: food
+          Value: -10
+        - Key: meds
+          Value: -10
+        - Key: wealth
+          Value: -10

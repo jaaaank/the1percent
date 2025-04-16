@@ -25,7 +25,7 @@ MonoBehaviour:
 '
   wealthyAdvice: The CEO works hard for his money.
   commonAdvice: Allowing this to happen will put the lower and middle classes at
-    an even greater disadvantage
+    an even greater disadvantage.
   yesText: Pass a restriction
   midText: 
   noText: Do not pass any restriction
